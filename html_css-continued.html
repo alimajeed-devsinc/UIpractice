@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" type="image/png"  href="https://www.freefavicon.com/freefavicons/icons/balloon-icon-152-167612.png">
+    <style>
+    table,th,td,tr{
+        border: 1px solid black;
+        border-collapse: separate;
+        border-radius: 10px;
+        border-style: dotted;
+        border-color: blueviolet;
+        text-align: center;
+    }
+    th{
+        /* background-color: tomato; */
+        width: 20%;
+        }
+    td:nth-child(even),th:nth-child(even){
+        background-color: lightblue;
+    }
+</style>
+<script>
+    n=0
+    function touch(){
+        n=n+1   
+        document.getElementById("writehere").innerHTML= "Button pressed <strong>" + n +" </strong> times";
+    }
+</script>
+</head>
+<body>
+    <p>The <abbr title="Abbreviation">abb</abbr> was founded in 1948.</p>
+<p>For <address>Address</address></p>
+<p><cite>Cited Title</cite> by Edvard Munch. Painted in 1893.</p>
+<bdo dir="rtl">This text will be written from right to left</bdo>
+<table  >
+    <caption>Sample Table</caption>
+    <tr>
+        <th colspan="6">Time Table</th>
+    </tr>
+    <tr>
+        <th rowspan="6">Hours</th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thurs</th>
+        <th>Fri</th>
+    </tr>
+    <tr>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <th colspan="5">Lunch</th>
+    </tr>
+</table>
+<dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>
+  <ul style="list-style-type:square;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+  <iframe src="../html/html1.html" frameborder="0" height="200" width="300" title="Previous Work"></iframe>
+  <br><iframe src="https://www.google.com" ></iframe>
+  <div >
+      <button onclick="touch()" >Click here for time</button>
+<div id="writehere"></div>
+  </div>
+</body>
+</html>
+

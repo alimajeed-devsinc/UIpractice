@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+img{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: -1; 
+}
+@media screen  and (min-width:500px) and (max-width:600px){
+    body{ 
+        background-color: blue;
+    }
+    
+}
+@media screen and (min-width:300px) and (max-width:400px){
+    body{background-color: green;}
+}
+.flex-container{
+    display: flex;
+    height: 200px;
+    align-items: stretch;
+}
+div{
+    margin: 10px;
+    background-color: khaki;
+    border: 2px solid black;
+    border-radius: 10px;
+    flex-direction: column;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <h1>heading 1</h1>
+    <h1>headings</h1>
+    <img src="img/a.png" >
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars" >
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select><br>
+    <textarea name="message" rows="10" cols="30">
+        The cat was playing in the garden.
+        </textarea>
+    <input type="text" value="input">
+    
+    <picture>
+        <source media="(max-width: 599px)" srcset="img/b.png">
+        <source media="(min-width: 600px)" srcset="img/a.png">
+        <img src="img/a.png">
+      </picture>
+      <div class = "flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+</body>
+</html>
